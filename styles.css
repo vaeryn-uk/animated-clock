@@ -1,0 +1,92 @@
+.clock {
+    height: 800px;
+    width: 800px;
+    border-radius: 400px;
+    background: radial-gradient(ellipse at center, rgba(255,199,189,1) 0%, rgba(231,56,39,1) 100%);
+    position: relative;
+}
+
+.rotate1 {
+    animation-name: spin1;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(.8,.24,.23,.86);
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.rotate2 {
+    animation-name: spin2;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(.8,.24,.23,.86);
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.rotate3 {
+    animation-name: spin3;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(.8,.24,.23,.86);
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.rotate4 {
+    animation-name: spin4;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(.8,.24,.23,.86);
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.point {
+    position: absolute;
+    font-size: 72px;
+    color: blue;
+    font-family: Arial, serif;
+    text-align: center;
+    border-radius: 45px;
+    overflow: hidden;
+}
+
+#point-1 {
+    left: 385px;
+    top: 20px;
+}
+
+#point-2 {
+    left: 712px;
+    top: 350px;
+    transform: rotate(90deg);
+}
+
+#point-3 {
+    left: 385px;
+    top: 700px;
+    transform: rotate(180deg);
+}
+
+#point-4 {
+    left: 40px;
+    top: 350px;
+    transform: rotate(270deg);
+}
+
+@keyframes spin1 {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(-90deg); }
+}
+
+@keyframes spin2 { 
+    0% { transform: rotate(-90deg); }
+    100% { transform: rotate(-180deg); }
+}
+
+@keyframes spin3 {
+    0% { transform: rotate(-180deg); }
+    100% { transform: rotate(-270deg); }
+}
+
+@keyframes spin4 {
+    0% { transform: rotate(-270deg); }
+    100% { transform: rotate(-360deg); }
+}
